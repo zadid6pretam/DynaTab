@@ -145,3 +145,219 @@ pip install .
 pip install dynatab
 ```
 
+## Example Usage
+
+Below are minimal examples for using **DynaTab** on standard binary, multiclass, and regression tasks.  
+For full HDLSS experiments and Optuna sweeps, see the accompanying Jupyter notebooks.
+
+---
+
+### 1. Binary Classification (Breast Cancer)
+
+```python
+import pandas as pd
+from sklearn.datasets import load_breast_cancer
+from sklearn.model_selection import train_test_split
+
+from dynatab import (
+    DynaTabClassifier,
+    DFOConfig,
+    TrainConfig,
+    LossConfig,
+)
+
+# -----------------------------
+# Data
+# -----------------------------
+data = load_breast_cancer()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)  # 0/1 labels
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.2,
+    stratify=y,
+    random_state=42,
+)
+
+# -----------------------------
+# DynaTab configs
+# -----------------------------
+dfo_cfg = DFOConfig(
+    metric="manhattan",
+    num_clusters=2,
+    order="ascending",
+    mutation_prob=0.0,
+    tolerance=1e-3,
+    seed=42,
+)
+
+train_cfg = TrainConfig(
+    epochs=100,
+    lr=1e-3,
+    batch_size=256,
+    print_every=20,
+)
+
+loss_cfg = LossConfig(
+    loss_mode="DFO",      # "standard" | "dispersion" | "DFO"
+    lambda_disp=0.0,
+    lambda_global=0.0,
+)
+
+# -----------------------------
+# Model: DynaTabClassifier
+# -----------------------------
+clf = DynaTabClassifier(
+    task="binary",
+    backbone="Transformer",   # or "LSTM", "DAE", "Mamba", ...
+    embedding_dim=128,
+    dfo_cfg=dfo_cfg,
+    train_cfg=train_cfg,
+    loss_cfg=loss_cfg,
+    eval_metrics=["acc"],
+    device=None,              # auto-selects CUDA/CPU
+    standardize=True,         # train-only impute + standardize
+)
+
+clf.fit(X_train, y_train)
+metrics = clf.score(X_test, y_test, metrics=["acc"])
+print(f"Test Accuracy (Breast Cancer): {metrics['acc']:.4f}")
+```
+
+### 2. Multiclass Classification (Iris)
+
+```python
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+
+from dynatab import (
+    DynaTabClassifier,
+    DFOConfig,
+    TrainConfig,
+    LossConfig,
+)
+
+data = load_iris()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)  # 3 classes: 0,1,2
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.2,
+    stratify=y,
+    random_state=42,
+)
+
+dfo_cfg = DFOConfig(
+    metric="variance",
+    num_clusters=3,
+    order="descending",
+    mutation_prob=0.1,
+    tolerance=1e-3,
+    seed=42,
+)
+
+train_cfg = TrainConfig(
+    epochs=80,
+    lr=1e-3,
+    batch_size=64,
+    print_every=20,
+)
+
+loss_cfg = LossConfig(
+    loss_mode="standard",
+    lambda_disp=0.0,
+    lambda_global=0.0,
+)
+
+clf = DynaTabClassifier(
+    task="multiclass",
+    num_classes=3,
+    backbone="Transformer",
+    embedding_dim=64,
+    dfo_cfg=dfo_cfg,
+    train_cfg=train_cfg,
+    loss_cfg=loss_cfg,
+    eval_metrics=["acc"],
+    device=None,
+    standardize=True,
+)
+
+clf.fit(X_train, y_train)
+metrics = clf.score(X_test, y_test, metrics=["acc"])
+print(f"Test Accuracy (Iris): {metrics['acc']:.4f}")
+```
+
+### 3. Regression (Diabetes)
+
+```python
+import pandas as pd
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split
+
+from dynatab import (
+    DynaTabRegressor,
+    DFOConfig,
+    TrainConfig,
+    LossConfig,
+)
+
+data = load_diabetes()
+X = pd.DataFrame(data.data, columns=data.feature_names)
+y = pd.Series(data.target)
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.2,
+    random_state=42,
+)
+
+dfo_cfg = DFOConfig(
+    metric="correlation",
+    num_clusters=3,
+    order="ascending",
+    mutation_prob=0.1,
+    tolerance=1e-3,
+    seed=42,
+)
+
+train_cfg = TrainConfig(
+    epochs=120,
+    lr=1e-3,
+    batch_size=128,
+    print_every=20,
+)
+
+loss_cfg = LossConfig(
+    loss_mode="standard",   # for regression we typically keep it standard
+    lambda_disp=0.0,
+    lambda_global=0.0,
+)
+
+reg = DynaTabRegressor(
+    backbone="Transformer",
+    embedding_dim=64,
+    dfo_cfg=dfo_cfg,
+    train_cfg=train_cfg,
+    loss_cfg=loss_cfg,
+    eval_metrics=["r2"],    # e.g., R^2
+    device=None,
+    standardize=True,
+)
+
+reg.fit(X_train, y_train)
+metrics = reg.score(X_test, y_test, metrics=["r2"])
+print(f"Test R² (Diabetes): {metrics['r2']:.4f}")
+```
+
+### 4. Advanced: 5-Fold CV + Optuna Hyperparameter Tuning
+
+For full HDLSS experiments, repeated CV, and Optuna-based tuning (Transformer, LSTM, DAE, Mamba backbones) on real datasets such as **AI-d_case5**, **ADNI_AD123**, **GLI-85**, and others, see:
+
+- **`DynaTab_Experiment1.ipynb`** – Binary & multiclass classification and regression (with / without Optuna-based hyperparameter tuning).
+- **`DynaTab_Experiment2.ipynb`** – HDLSS case studies (e.g., GLI-85 with Mamba/LSTM backbones).
+- **`DynaTab Dataset Complexity Analysis.ipynb`** and **`DynaTab IDF Analyzer.ipynb`** – Intrinsic dimensionality and “when to use feature ordering” analysis.
+- You can tweak the metrics / epochs / DFO settings if you want them lighter or closer to the paper defaults.
+
