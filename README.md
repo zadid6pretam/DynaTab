@@ -7,7 +7,6 @@
 ![Conference](https://img.shields.io/badge/Conference-AAAI%202026%20NeuroAI%20Workshop-blue)
 [![Citation](https://img.shields.io/badge/Cite%20Us-PMLR--AAAI--2026--NeuroAI--Workshop-red)](https://neuroai-multimodal-workshop.github.io/)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-
 ![PIGL](https://img.shields.io/badge/PIGL-Positional%20Importance%20Gating%20Layer-blueviolet)
 ![DMA](https://img.shields.io/badge/DMA-Dynamic%20Masked%20Attention-orange)
 ![Backbone](https://img.shields.io/badge/Backbone-DAE%2FLSTM%2FTransformer-informational)
