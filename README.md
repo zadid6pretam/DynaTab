@@ -68,15 +68,16 @@ This folder contains the core DynaTab implementation (15 Python modules):
   Demonstrates how to use DynaTab for binary classification, multiclass classification, and regression, with or without Optuna-based hyperparameter tuning.
 
 - **`DynaTab_Experiment2.ipynb`**  
-  Demonstrates DynaTab on the GLI-85 HDLSS dataset for binary classification, *without* Optuna tuning, using Mamba or LSTM as the sequential processor backbone.
+  Demonstrates DynaTab on the GLI-85 HDLSS dataset for binary classification, without Optuna tuning, using Mamba or LSTM as the sequential processor backbone.
+  - *N.B.: Demo runs only contain less number of epochs or Optuna trials. For complete run, please use proper number of Optuna trials to search optimum hyperparameters.*
 
 ### Other top-level files
 
-- **`requirements.txt`** – Python dependencies required to run the DynaTab package and notebooks.
-- **`DynaTab_Architecture.jpg`** – High-level architecture diagram of the DynaTab framework.
-- **`LICENSE`** – MIT license for this repository.
-- **`README.md`** – Project overview, usage instructions, and citation information.
-- **`.gitignore`** – Standard Git ignore rules for Python and Jupyter projects.
+- **`requirements.txt`** - Python dependencies required to run the DynaTab package and notebooks.
+- **`DynaTab_Architecture.jpg`** - High-level architecture diagram of the DynaTab framework.
+- **`LICENSE`** - MIT license for this repository.
+- **`README.md`** - Project overview, usage instructions, and citation information.
+- **`.gitignore`** - Standard Git ignore rules for Python and Jupyter projects.
 
 
 ### Tested Environment
