@@ -12,3 +12,6 @@
 [![Citation](https://img.shields.io/badge/Cite%20Us-PMLR--AAAI--2026--NeuroAI--Workshop-red)](https://neuroai-multimodal-workshop.github.io/)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
+<p align="center">
+  <img src="dynatab_architecture.jpg" alt="DynaTab Architecture" width="900">
+</p>
