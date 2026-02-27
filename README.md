@@ -30,7 +30,7 @@ Bibtex:
   author    = {Habib, Al Zadid Sultan Bin and Doretto, Gianfranco and Adjeroh, Donald A.},
   booktitle = {Proceedings of the AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI)},
   year      = {2026},
-  series    = {Proceedings of Machine Learning Research}
+  series    = {PMLR}
 }
 ```
 
