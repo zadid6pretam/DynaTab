@@ -1,0 +1,7 @@
+numpy>=1.26.4
+pandas>=2.2.3
+scikit-learn>=1.5.2
+torch>=2.5.1
+matplotlib>=3.10.0
+scipy>=1.11.4
+kmeans_gpu>=0.0.5
