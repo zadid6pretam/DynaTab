@@ -361,3 +361,17 @@ For full HDLSS experiments, repeated CV, and Optuna-based tuning (Transformer, L
 - **`DynaTab Dataset Complexity Analysis.ipynb`** and **`DynaTab IDF Analyzer.ipynb`** – Intrinsic dimensionality and “when to use feature ordering” analysis.
 - You can tweak the metrics / epochs / DFO settings if you want them lighter or closer to the paper defaults.
 
+## Previous Work: TabSeq
+
+DynaTab builds on our earlier work on feature ordering for tabular data:
+
+- **TabSeq: A Framework for Deep Learning on Tabular Data via Sequential Ordering**  
+  GitHub: https://github.com/zadid6pretam/TabSeq  
+  Springer (ICPR 2024 proceedings): https://link.springer.com/chapter/10.1007/978-3-031-78128-5_27  
+
+If you are interested in:
+- MHA-DAE-guided sequential tabular models,
+- Cluster-guided feature ordering, and  
+- Baseline comparison to classical ML and other deep models,
+
+please also refer to the **TabSeq** repository and its accompanying paper as the foundational precursor to DynaTab.
