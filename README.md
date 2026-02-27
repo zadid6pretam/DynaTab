@@ -20,9 +20,7 @@ DynaTab is a neuro-inspired tabular deep learning model for high-dimensional tab
 
 ## Citation
 
-Al Zadid Sultan Bin Habib, Gianfranco Doretto, and Donald A. Adjeroh.  
-“DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data.”  
-In *AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI) Workshop Proceedings (PMLR)*, 2026.
+Al Zadid Sultan Bin Habib, Gianfranco Doretto, and Donald A. Adjeroh.   “DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data.”   In *AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI) Workshop Proceedings (PMLR)*, 2026.
 
 Bibtex:
 ```bash
