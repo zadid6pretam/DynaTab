@@ -96,3 +96,51 @@ This folder contains the core DynaTab implementation (15 Python modules):
 
 ```bash
 pip install "torch==2.5.1+cu121" --index-url https://download.pytorch.org/whl/cu121
+
+## Installation
+
+You can install **DynaTab** in several ways depending on your workflow.
+
+---
+
+### Option 1: Clone the Repository (Recommended for Development)
+
+```bash
+git clone https://github.com/zadid6pretam/DynaTab.git
+cd DynaTab
+pip install -r requirements.txt
+pip install -e .
+
+### Option 2: Install Directly from GitHub (No Cloning Needed)
+
+```bash
+pip install "git+https://github.com/zadid6pretam/DynaTab.git"
+```
+
+### Option 3: Use a Virtual Environment
+
+```bash
+python -m venv dynatab-env
+source dynatab-env/bin/activate  # On Windows: dynatab-env\Scripts\activate
+
+git clone https://github.com/zadid6pretam/DynaTab.git
+cd DynaTab
+pip install -r requirements.txt
+pip install -e .
+```
+
+### Option 4: Local Install Without Editable Mode
+
+```bash
+git clone https://github.com/zadid6pretam/DynaTab.git
+cd DynaTab
+pip install -r requirements.txt
+pip install .
+```
+
+### Option 5: Install from PyPI (Planned)
+
+```bash
+pip install dynatab
+```
+
