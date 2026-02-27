@@ -15,3 +15,21 @@
 <p align="center">
   <img src="DynaTab_Architecture.jpg" alt="DynaTab Architecture" width="900">
 </p>
+
+
+
+### Tested Environment
+
+- Python 3.8+
+- torch 2.5.1+cu121 (CUDA 12.1)
+- numpy 1.26.4
+- pandas 2.2.3
+- scikit-learn 1.5.2
+- matplotlib 3.10.0
+- scipy 1.11.4
+- kmeans_gpu 0.0.5
+
+### Recommended PyTorch install (GPU, CUDA 12.1)
+
+```bash
+pip install "torch==2.5.1+cu121" --index-url https://download.pytorch.org/whl/cu121
