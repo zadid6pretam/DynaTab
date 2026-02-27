@@ -5,7 +5,7 @@
 ![OPE](https://img.shields.io/badge/OPE-Order--Aware%20Positional%20Embedding-orange)
 ![PIGL](https://img.shields.io/badge/PIGL-Positional%20Importance%20Gating%20Layer-blueviolet)
 ![DMA](https://img.shields.io/badge/DMA-Dynamic%20Masked%20Attention-orange)
-![Backbone](https://img.shields.io/badge/Backbone-DAE%2FLSTM%2FTransformer%20Mamba%20DAE--MHA--LSTM-informational)
+![Backbone](https://img.shields.io/badge/Backbone-DAE%2FLSTM%2FTransformer%2Mamba%2DAE--MHA--LSTM-informational)
 ![IDF Analyzer](https://img.shields.io/badge/IDF%20Analyzer-Feature%20Ordering%20When%20to%20Use%3F-success)
 ![Model](https://img.shields.io/badge/Model-DynaTab-skyblue)
 ![Conference](https://img.shields.io/badge/Conference-AAAI%202026%20NeuroAI%20Workshop-blue)
