@@ -17,6 +17,23 @@
 </p>
 
 
+## Citation
+
+Al Zadid Sultan Bin Habib, Gianfranco Doretto, and Donald A. Adjeroh.  
+“DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data.”  
+In *AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI) Workshop Proceedings (PMLR)*, 2026.
+
+Bibtex:
+```bash
+@inproceedings{habib2026dynatab,
+  title     = {{DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data}},
+  author    = {Habib, Al Zadid Sultan Bin and Doretto, Gianfranco and Adjeroh, Donald A.},
+  booktitle = {Proceedings of the AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI)},
+  year      = {2026},
+  series    = {Proceedings of Machine Learning Research}
+}
+```
+
 
 ### Tested Environment
 
