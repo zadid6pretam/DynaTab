@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynatab"
+version = "0.1.0"
+description = "DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Al Zadid Sultan Bin Habib", email = "your_email@example.com" }
+]
+keywords = [
+  "tabular-deep-learning",
+  "feature-ordering",
+  "transformer",
+  "lstm",
+  "mamba",
+  "HDLSS"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+  "numpy>=1.26.4",
+  "pandas>=2.2.3",
+  "scikit-learn>=1.5.2",
+  "torch>=2.5.1",
+  "matplotlib>=3.10.0",
+  "scipy>=1.11.4",
+  "kmeans_gpu>=0.0.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/zadid6pretam/DynaTab"
+Source = "https://github.com/zadid6pretam/DynaTab"
+Issues = "https://github.com/zadid6pretam/DynaTab/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["dynatab*"]
