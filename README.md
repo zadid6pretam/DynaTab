@@ -13,5 +13,5 @@
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 <p align="center">
-  <img src="DynaTabSeq_Architecture.jpg" alt="DynaTab Architecture" width="900">
+  <img src="DynaTab_Architecture.jpg" alt="DynaTab Architecture" width="900">
 </p>
