@@ -69,7 +69,7 @@ This folder contains the core DynaTab implementation (15 Python modules):
 
 - **`DynaTab_Experiment2.ipynb`**  
   Demonstrates DynaTab on the GLI-85 HDLSS dataset for binary classification, without Optuna tuning, using Mamba or LSTM as the sequential processor backbone.
-  - *N.B.: Demo runs only contain less number of epochs or Optuna trials. For complete run, please use proper number of Optuna trials to search optimum hyperparameters.*
+- *N.B.: Demo runs only contain less number of epochs or Optuna trials. For complete run, please use proper number of Optuna trials to search optimum hyperparameters.*
 
 ### Other top-level files
 
