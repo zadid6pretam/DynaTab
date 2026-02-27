@@ -96,6 +96,7 @@ This folder contains the core DynaTab implementation (15 Python modules):
 
 ```bash
 pip install "torch==2.5.1+cu121" --index-url https://download.pytorch.org/whl/cu121
+```
 
 ## Installation
 
