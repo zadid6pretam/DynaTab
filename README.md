@@ -109,6 +109,7 @@ git clone https://github.com/zadid6pretam/DynaTab.git
 cd DynaTab
 pip install -r requirements.txt
 pip install -e .
+```
 
 ### Option 2: Install Directly from GitHub (No Cloning Needed)
 
