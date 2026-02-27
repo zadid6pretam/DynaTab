@@ -41,21 +41,21 @@ Bibtex:
 
 This folder contains the core DynaTab implementation (15 Python modules):
 
-- `__init__.py` – Package initializer and high-level API exports.
-- `model.py` – Main DynaTab model definition and wiring of all sub-modules.
-- `dfo.py` – Dynamic Feature Ordering (DFO) module and clustering/graph construction.
-- `ope.py` – Order-Aware Positional Embedding (OPE) implementation.
-- `pigl.py` – Positional Importance Gating Layer (PIGL).
-- `dma.py` – Dynamic Masked Attention (DMA) block.
-- `seqprobinary.py` – Training loop / utilities for **binary classification**.
-- `seqpromulti.py` – Training loop / utilities for **multiclass classification**.
-- `seqproregression.py` – Training loop / utilities for **regression**.
-- `preprocess.py` – Data preprocessing and tabular input utilities (splits, scaling, etc.).
-- `metrics.py` – Evaluation metrics and helper functions.
-- `estimator.py` – High-level estimator wrapper for running experiments (sklearn-style API).
-- `idf_analyzer.py` – Intrinsic Dimensionality Factor (IDF) + FOE analyzer: “Feature Ordering – When to Use?”.
-- `customloss.py` – Custom loss functions used by DynaTab.
-- `trainer.py` – Generic training / validation loop utilities shared across tasks.
+- `__init__.py` - Package initializer and high-level API exports.
+- `model.py` - Main DynaTab model definition and wiring of all sub-modules.
+- `dfo.py` - Dynamic Feature Ordering (DFO) module and clustering/graph construction.
+- `ope.py` - Order-Aware Positional Embedding (OPE) implementation.
+- `pigl.py` - Positional Importance Gating Layer (PIGL).
+- `dma.py` - Dynamic Masked Attention (DMA) block.
+- `seqprobinary.py` - Training loop / utilities for **binary classification**.
+- `seqpromulti.py` - Training loop / utilities for **multiclass classification**.
+- `seqproregression.py` - Training loop / utilities for **regression**.
+- `preprocess.py` - Data preprocessing and tabular input utilities (splits, scaling, etc.).
+- `metrics.py` - Evaluation metrics and helper functions.
+- `estimator.py` - High-level estimator wrapper for running experiments (sklearn-style API).
+- `idf_analyzer.py` - Intrinsic Dimensionality Factor (IDF) + FOE analyzer: “Feature Ordering – When to Use?”.
+- `customloss.py` - Custom loss functions used by DynaTab.
+- `trainer.py` - Generic training / validation loop utilities shared across tasks.
 
 ### Notebooks
 
@@ -67,10 +67,10 @@ This folder contains the core DynaTab implementation (15 Python modules):
   The code cells illustrate how to use DynaTab to assess when feature ordering is appropriate for a given dataset.
 
 - **`DynaTab_Experiment1.ipynb`**  
-  Demonstrates how to use DynaTab for **binary classification**, **multiclass classification**, and **regression**, *with or without* Optuna-based hyperparameter tuning.
+  Demonstrates how to use DynaTab for binary classification, multiclass classification, and regression, with or without Optuna-based hyperparameter tuning.
 
 - **`DynaTab_Experiment2.ipynb`**  
-  Demonstrates DynaTab on the **GLI-85 HDLSS dataset** for binary classification, *without* Optuna tuning, using **Mamba** or **LSTM** as the sequential processor backbone.
+  Demonstrates DynaTab on the GLI-85 HDLSS dataset for binary classification, *without* Optuna tuning, using Mamba or LSTM as the sequential processor backbone.
 
 ### Other top-level files
 
