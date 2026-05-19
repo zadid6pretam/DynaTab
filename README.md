@@ -24,14 +24,22 @@ Al Zadid Sultan Bin Habib, Gianfranco Doretto, and Donald A. Adjeroh.   “DynaT
 
 Bibtex:
 ```bash
-@inproceedings{habib2026dynatab,
-  title     = {{DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data}},
-  author    = {Habib, Al Zadid Sultan Bin and Doretto, Gianfranco and Adjeroh, Donald A.},
-  booktitle = {Proceedings of the AAAI 2026 First International Workshop on Neuro for AI \& AI for Neuro: Towards Multi-Modal Natural Intelligence (NeuroAI)},
+@InProceedings{dynatab,
+  title = 	 {{DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data}},
+  author =       {Habib, Al Zadid Sultan Bin and Doretto, Gianfranco and Adjeroh, Donald A.},
+  booktitle = 	 {{Proceedings of the First Workshop on NeuroAI Multimodal Intelligence @ AAAI 2026}},
+  pages     = {27--57},
   year      = {2026},
-  series    = {PMLR}
+  volume    = {308},
+  series    = {{Proceedings of Machine Learning Research}},
+  publisher = {PMLR},
+  url = 	 {https://proceedings.mlr.press/v308/habib26a.html}
 }
 ```
+
+Paper Link: https://proceedings.mlr.press/v308/habib26a.html
+
+arXiv preprint: https://arxiv.org/abs/2605.03430
 
 ## Files and Repository Structure
 
@@ -441,6 +449,7 @@ Our earlier work on sequential modeling for tabular data:
 - **TabSeq: A Framework for Deep Learning on Tabular Data via Sequential Ordering**  
   GitHub: https://github.com/zadid6pretam/TabSeq  
   Springer ICPR 2024 proceedings: https://link.springer.com/chapter/10.1007/978-3-031-78128-5_27
+  arXiv: https://arxiv.org/abs/2410.13203
 
 ```bibtex
 @inproceedings{habib2024tabseq,
@@ -463,6 +472,7 @@ Our earlier work on sequential modeling for tabular data:
 This repository corresponds to our separate collaborative work on tabular remote sensing and environmental data:
 - ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data
 GitHub: https://github.com/zadid6pretam/ZAYAN
+arXiv: https://arxiv.org/abs/2604.27606
 
 ```bibtex
 @inproceedings{habib2026zayan,
