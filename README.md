@@ -377,6 +377,7 @@ For full HDLSS experiments, repeated CV, and Optuna-based tuning (Transformer, L
 
 Our recent ICML 2026 Regular main conference paper on feature ordering and compression for tabular foundation models for high-dimensional low-sample-size tabular data:
 - GOTabPFN: From Feature Ordering to Compact Tokenization for Tabular Foundation Models on High-Dimensional Data
+
 GitHub: https://github.com/zadid6pretam/GOTabPFN
 
 ```bibtex
@@ -392,6 +393,7 @@ GitHub: https://github.com/zadid6pretam/GOTabPFN
 
 Our generative modeling framework for high-dimensional low-sample-size tabular data:
 - BSTabDiff: Block-Subunit Diffusion Priors for High-Dimensional Tabular Data Generation
+
 GitHub: https://github.com/zadid6pretam/BSTabDiff
 
 ```bibtex
@@ -409,6 +411,7 @@ GitHub: https://github.com/zadid6pretam/BSTabDiff
 Our structured feature sequencing framework for multimodal learning with image and tabular data. This work is part of my PhD research on feature sequencing or ordering for multimodal image-tabular representation learning.
 
 - **iStructTab: Structured Feature Sequencing for Multimodal Learning of Image and Tabular Data**  
+
   GitHub: https://github.com/zadid6pretam/iStructTab
 
 ```bibtex
@@ -427,6 +430,7 @@ Our structured feature sequencing framework for multimodal learning with image a
 Our more recent work on learned feature ordering for high-dimensional tabular data:
 
 - **DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data**
+
 GitHub: https://github.com/zadid6pretam/DynaTab
 
 ```bibtex
@@ -447,8 +451,11 @@ GitHub: https://github.com/zadid6pretam/DynaTab
 Our earlier work on sequential modeling for tabular data:
 
 - **TabSeq: A Framework for Deep Learning on Tabular Data via Sequential Ordering**  
+
   GitHub: https://github.com/zadid6pretam/TabSeq  
+
   Springer ICPR 2024 proceedings: https://link.springer.com/chapter/10.1007/978-3-031-78128-5_27
+
   arXiv: https://arxiv.org/abs/2410.13203
 
 ```bibtex
@@ -471,7 +478,9 @@ Our earlier work on sequential modeling for tabular data:
 
 This repository corresponds to our separate collaborative work on tabular remote sensing and environmental data:
 - ZAYAN: Disentangled Contrastive Transformer for Tabular Remote Sensing Data
+
 GitHub: https://github.com/zadid6pretam/ZAYAN
+
 arXiv: https://arxiv.org/abs/2604.27606
 
 ```bibtex
