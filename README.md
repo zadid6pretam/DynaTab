@@ -162,7 +162,7 @@ For full HDLSS experiments and Optuna sweeps, see the accompanying Jupyter noteb
 
 ---
 
-### 1. Binary Classification (Breast Cancer)
+### 1. Binary Classification
 
 ```python
 import pandas as pd
@@ -235,7 +235,7 @@ metrics = clf.score(X_test, y_test, metrics=["acc"])
 print(f"Test Accuracy (Breast Cancer): {metrics['acc']:.4f}")
 ```
 
-### 2. Multiclass Classification (Iris)
+### 2. Multiclass Classification
 
 ```python
 import pandas as pd
@@ -300,7 +300,7 @@ metrics = clf.score(X_test, y_test, metrics=["acc"])
 print(f"Test Accuracy (Iris): {metrics['acc']:.4f}")
 ```
 
-### 3. Regression (Diabetes)
+### 3. Regression
 
 ```python
 import pandas as pd
