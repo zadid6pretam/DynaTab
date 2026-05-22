@@ -232,7 +232,7 @@ clf = DynaTabClassifier(
 
 clf.fit(X_train, y_train)
 metrics = clf.score(X_test, y_test, metrics=["acc"])
-print(f"Test Accuracy (Breast Cancer): {metrics['acc']:.4f}")
+print(f"Test Accuracy: {metrics['acc']:.4f}")
 ```
 
 ### 2. Multiclass Classification
@@ -297,7 +297,7 @@ clf = DynaTabClassifier(
 
 clf.fit(X_train, y_train)
 metrics = clf.score(X_test, y_test, metrics=["acc"])
-print(f"Test Accuracy (Iris): {metrics['acc']:.4f}")
+print(f"Test Accuracy: {metrics['acc']:.4f}")
 ```
 
 ### 3. Regression
@@ -359,7 +359,7 @@ reg = DynaTabRegressor(
 
 reg.fit(X_train, y_train)
 metrics = reg.score(X_test, y_test, metrics=["r2"])
-print(f"Test R² (Diabetes): {metrics['r2']:.4f}")
+print(f"Test R²: {metrics['r2']:.4f}")
 ```
 
 ### 4. Advanced: 5-Fold CV + Optuna Hyperparameter Tuning
