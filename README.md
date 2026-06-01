@@ -64,6 +64,8 @@ This folder contains the core DynaTab implementation (15 Python modules):
 - `trainer.py` - Generic training / validation loop utilities shared across tasks.
 
 ### Notebooks
+**Since May 30, 2026, all Jupyter notebook previews are failing with "An error occurred" message. This affects both my own notebooks and others' repositories. Using nbformat v5.10.4 and nbconvert v7.17.1. Notebooks are valid and working locally. This appears to be a GitHub-side rendering issue.**
+- See: https://github.com/orgs/community/discussions/197350
 
 - **`DynaTab Dataset Complexity Analysis.ipynb`**  
   Contains the experiments for the **“Feature Ordering – When to Use?”** section, including IDF / FOE computation across datasets.
