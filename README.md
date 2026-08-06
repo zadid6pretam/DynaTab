@@ -454,7 +454,9 @@ Our more recent work on learned feature ordering for high-dimensional tabular da
 
 - **DynaTab: Dynamic Feature Ordering as Neural Rewiring for High-Dimensional Tabular Data**
 
-GitHub: https://github.com/zadid6pretam/DynaTab
+- GitHub: https://github.com/zadid6pretam/DynaTab
+- Paper: https://link.springer.com/chapter/10.1007/978-3-032-31404-8_43 
+- arXiv: https://arxiv.org/abs/2608.04348
 
 ```bibtex
 @inproceedings{habib2026dynatab,
